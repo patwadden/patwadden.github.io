@@ -46,7 +46,9 @@ h1,h2 {
 }
 
 @media (min-width: 922px) {
-
+	h1,h2 {
+		font-size: 70px;
+	}
 }
 
 @media (min-width: 1200px) {
