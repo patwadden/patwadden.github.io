@@ -1,3 +1,10 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, ::after, ::before {
+	box-sizing: border-box;
+}
 body, html {
 	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
@@ -8,7 +15,9 @@ body, html {
 h1, h2 {
 	font-weight: 900;
 	margin: 0;
+	font-size: 25px;
 }
+
 .email {
 	text-transform: lowercase;
 	text-decoration: none;
@@ -18,24 +27,92 @@ h1, h2 {
 	font-weight: bold;
 }
 .intro {
-	margin: 0 auto 0 auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 0 10px;
+	width: 80%;
+	float: left;
+}
+.works {
+	width: 20%;
+	float: left;
+	height: 100%;
+}
+.work {
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	/*border: 1px solid #000;*/
+	/*border-top: none;*/
+
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+.work:last-child {
+	/*border-bottom: none;*/
+}
+.work .inner {
+	position: relative;
+	text-transform: none;
+	height: 100%;
+	width: 100%;
+	/*background: rgba(225,255,255,0.25);*/
+	color: #fff;
+}
+.work .inner .text {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
 }
+.client {
+	margin: 0;
+	padding: 0 0 10px 0;
+}
+.project {
+	margin: 0;
+	padding: 0;
+}
+.hashtags {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+/* 
+	WORK
+*/
+.work.macquarie {
+	background: #A6192E;
+	/*background-image: url('images/macquarie.png');*/
+}
+.work.cellarmasters {
+	background: #88d0cc;
+	/*background-image: url('images/cellarmasters.png');*/
+}
+.work.healthcombined {
+	background: #4977f6;
+	/*background-image: url('images/healthcombined.png');*/
+}
+.work.myer {
+	background: #000;
+	color: #fff;
+	/*background-image: url('images/instagram.jpg');*/
+}
+
+
 
 /*
-$screen-sm-min: 768px;
-$screen-md-min: 922px;
-$screen-lg-min:	1200px;
+	MEDIA QUERIES
+	$screen-sm-min: 768px;
+	$screen-md-min: 922px;
+	$screen-lg-min:	1200px;
 */
 
-h1,h2 {
-	font-size: 25px;
-}
-.intro {
-	padding: 0 10px;
-}
 @media (min-width: 768px) {
 	h1,h2 {
 		font-size: 50px;
@@ -54,3 +131,4 @@ h1,h2 {
 @media (min-width: 1200px) {
 
 }
+
