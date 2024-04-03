@@ -587,10 +587,6 @@ body {
   inset: 0px;
 }
 
-.left-full {
-  left: 100%;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -637,12 +633,16 @@ body {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-full {
   height: 100%;
 }
 
-.w-1\/5 {
-  width: 20%;
+.w-auto {
+  width: auto;
 }
 
 .w-full {
@@ -671,10 +671,10 @@ body {
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-x-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -683,6 +683,10 @@ body {
 
 .rounded {
   border-radius: 0.25rem;
+}
+
+.border-b {
+  border-bottom-width: 1px;
 }
 
 .bg-sky-500 {
@@ -703,14 +707,28 @@ body {
   padding: 1rem;
 }
 
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
+.text-lg {
+  font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -723,6 +741,11 @@ body {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.text-sky-500 {
+  --tw-text-opacity: 1;
+  color: rgb(14 165 233 / var(--tw-text-opacity));
 }
 
 .text-sky-600 {
@@ -742,10 +765,6 @@ body {
 
 .underline {
   text-decoration-line: underline;
-}
-
-.opacity-10 {
-  opacity: 0.1;
 }
 
 .transition-all {
@@ -782,12 +801,20 @@ p {
 }
 
 @media (min-width: 768px) {
+  .md\:visible {
+    visibility: visible;
+  }
+
   .md\:left-full {
     left: 100%;
   }
 
   .md\:mt-0 {
     margin-top: 0px;
+  }
+
+  .md\:block {
+    display: block;
   }
 
   .md\:w-1\/5 {
@@ -802,6 +829,12 @@ p {
     --tw-space-x-reverse: 0;
     margin-right: calc(1rem * var(--tw-space-x-reverse));
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
   .md\:rounded-none {

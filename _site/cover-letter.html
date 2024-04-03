@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+    <title>Patrick Wadden - Product Designer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.8/dist/cdn.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="./min.css" rel="stylesheet">
+</head>
+<body>
+	<main class="my-12 mx-auto max-w-2xl">
+		<div
+  x-data="{
+    get timeOfDay() {
+      const today = new Date()
+      const currentHour = today.getHours()
+
+      if (currentHour < 12) {
+        return 'morning'
+      }
+      if (currentHour < 18) {
+        return 'afternoon'
+      }
+
+      return 'evening'
+    }
+  }"
+>
+  <p>Good <span x-text="timeOfDay">morning</span>,</p>
+  <p>Before diving into why I'd be a great fit for this role, I feel like I need to give a little context.</p>
+  <p>I haven't been looking for a new job, but when I saw what essentially is my dream job being advertised, I had to apply. And then when I saw when the job ad was closing in one day, I panicked. You see, the fact I've not been looking brings a couple of issues, <a class="text-sky-600 underline" href="/">my website</a> hasn't been updated in going on 10 years (<a class="text-sky-600 underline" href="old/">here is the old one if you want to have a look anyway</a>), and I hadn't gathered any of my recent work together. But alas, here we are.</p>
+  <p>In recent years, I've called myself, and worked as, a Product Designer. But I've never felt at home with that job title. Yes, it's been great at honing skills such as user empathy, project planning, client relationships, and business needs, but it's never felt natural. What's always felt natural is interaction design, or at least what my idea of interaction design is; detailed, nuanced design, that delights users.</p>
+  <p>So why this role? Well a few things really really resonated with me. Designing in code, deep diving and really understanding how things work, living on the bleeding edge, and tuning easing curves to name a few. To see them all written down under one job description was like music to my ears. I'm the person that meticulously read the material design animation documentation when it came out, not just so I knew how to use it, but so that I knew why to use it. </p>
+  <p>My career path has gone from frontend developer, to interaction designer, to UX designer, but the constant has always been my excitement for the technology. I get a kick out of - and loose sleep over - simplifying the things that people won't even see, because I know it's there. Be it finding the best way to manage tailwind classes in large scale react apps, organising my Figma components library for optimal inheritance, or making sure that functions and methods are in the most efficient place in my latest Laravel exploration.</p>
+  <p>The kind of work described in the job ad doesn't read as work. To me, it reads more like a hobby, completely bespoke to me, right down to "learning After Effects to produce a video trailer for a new release". Why is that a good thing? Because of the passion. I'll be fully invested, will strive to learn new things, and improve old things.</p>
+  <p>And who doesn't like the sound of an "annual fun-focused trip", hey?</p>
+  <p>Thank you for reading,<br />
+  Patrick</p>
+</div>
+
+	</main>
+</body>
+</html>
