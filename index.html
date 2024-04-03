@@ -1,436 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<title>Patrick Wadden</title>
-
-		<link href="build/dist/css/styles.css" rel="stylesheet">
-		<link rel="icon" type="image/ico" href="favicon.ico">
-
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
-		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-	</head>
-	<body id="ghp">
-
-		<header>
-
-			<div id="mobile-navigation"></div>
-
-			<span class="hamburger visible-xs">				
-				<div class="bar top"></div>
-				<div class="bar middle"></div>
-				<div class="bar bottom"></div>
-			</span>	
-
-			<nav>
-				<div class="container">
-					<ul class="menu">
-						<li><a href="#home" class="nav-link active">Home</a></li>
-						<li><a href="#me" class="nav-link">Me</a></li>
-						<li><a href="#skills" class="nav-link">Skills</a></li>
-						<li><a href="#work" class="nav-link">Work</a></li>
-						<li><a href="#connect" class="nav-link">Connect</a></li>
-						
-						<span class="right">
-							<li class="hidden-xs"><a href="mailto:patwadden@gmail.com" title="Send me an email"><i class="fa fa-envelope"></i></a></li>
-							<li class="visible-xs"><a href="mailto:patwadden@gmail.com" title="Send me an email">Email me</a></li>
-
-							<li class="hidden-xs cv"><a href="http://patrickwadden.com/Patrick_Wadden_CV.pdf" title="Download my CV" >CV</a></li>
-							<li class="visible-xs"><a href="http://patrickwadden.com/Patrick_Wadden_CV.pdf" title="Download my CV" >Download CV</a></li>
-						</span>
-						
-
-					</ul>
-
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="./min.css" rel="stylesheet">
+</head>
+<body>
+	<main class="my-12 mx-auto max-w-2xl">
+		<div class="flex flex-col">
+			<div class="flex">
+				<h1 class="text-3xl font-bold">Patrick Wadden</h1>
+				<div class="ml-auto flex items-center space-x-2">
+					<a href="mailto:patwadden@gmail.com" target="_blank">
+						<svg class="fill-sky-500 hover:fill-sky-700 transition-colors" width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M19.9375 0C21.0547 0 22 0.945313 22 2.0625C22 2.75 21.6563 3.35156 21.1406 3.73828L11.8164 10.7422C11.3008 11.1289 10.6563 11.1289 10.1406 10.7422L0.816406 3.73828C0.300781 3.35156 0 2.75 0 2.0625C0 0.945313 0.902344 0 2.0625 0H19.9375ZM9.32422 11.8594C10.3125 12.5898 11.6445 12.5898 12.6328 11.8594L22 4.8125V13.75C22 15.2969 20.7539 16.5 19.25 16.5H2.75C1.20313 16.5 0 15.2969 0 13.75V4.8125L9.32422 11.8594Z" />
+						</svg>
+					</a>
+					<a href="https://www.linkedin.com/in/patwadden/" target="_blank">
+						<svg class="fill-sky-500 hover:fill-sky-700 transition-colors" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.429 0C21.263 0 22 .737 22 1.62V20.43c0 .884-.737 1.571-1.571 1.571H1.522C.687 22 0 21.312 0 20.429V1.62C0 .737.688 0 1.522 0H20.43Zm-13.8 18.857V8.397H3.39v10.46h3.24ZM5.01 6.924a1.865 1.865 0 0 0 1.866-1.866c0-1.031-.835-1.915-1.866-1.915-1.08 0-1.915.884-1.915 1.915 0 1.031.835 1.866 1.915 1.866Zm13.848 11.933v-5.745c0-2.8-.638-5.01-3.928-5.01-1.572 0-2.652.885-3.094 1.72h-.05V8.396H8.693v10.46h3.241v-5.156c0-1.375.246-2.701 1.964-2.701 1.67 0 1.67 1.571 1.67 2.75v5.107h3.29Z" /></svg>
+					</a>
+					<a href="https://github.com/patwadden" target="_blank">
+						<svg class="fill-sky-500 hover:fill-sky-700 transition-colors"  width="22" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.319 17.986c0-.089-.09-.178-.222-.178-.133 0-.222.09-.222.178 0 .089.089.177.222.133.133 0 .222-.044.222-.133Zm-1.375-.222c.044-.089.177-.133.31-.089.133.045.177.133.177.222a.213.213 0 0 1-.266.089c-.133 0-.221-.133-.221-.222Zm1.996-.044c.088-.045.221.044.221.133.045.088-.044.133-.177.177-.133.045-.266 0-.266-.088 0-.134.088-.222.222-.222ZM10.823.688C16.988.688 22 5.388 22 11.51c0 4.923-3.016 9.137-7.452 10.6-.576.134-.798-.22-.798-.531 0-.355.044-2.218.044-3.682 0-1.064-.354-1.73-.754-2.084 2.484-.267 5.101-.622 5.101-4.88 0-1.241-.443-1.818-1.153-2.616.089-.311.488-1.464-.133-3.017-.932-.31-3.06 1.198-3.06 1.198-.888-.266-1.82-.355-2.795-.355-.931 0-1.863.089-2.75.355 0 0-2.173-1.464-3.06-1.198-.621 1.553-.267 2.706-.134 3.017-.71.798-1.064 1.375-1.064 2.617 0 4.258 2.528 4.612 5.012 4.879-.355.31-.62.798-.71 1.508-.665.31-2.262.798-3.238-.932-.62-1.064-1.73-1.153-1.73-1.153-1.064 0-.044.71-.044.71.71.31 1.198 1.596 1.198 1.596.665 1.996 3.77 1.331 3.77 1.331v2.75c0 .266-.177.621-.754.532C3.06 20.647 0 16.433 0 11.51 0 5.39 4.702.688 10.823.688ZM4.303 15.99c.044-.044.132 0 .221.044.089.089.089.222.045.266-.09.045-.178 0-.267-.044-.044-.089-.088-.222 0-.266Zm-.488-.355c.044-.044.088-.044.177 0s.133.089.133.133c-.044.089-.133.089-.222.044-.088-.044-.133-.088-.088-.177Zm1.419 1.597c.089-.089.222-.044.31.044.09.089.09.222.045.266-.045.089-.178.045-.266-.044-.133-.089-.133-.222-.09-.266Zm-.488-.665c.089-.045.177 0 .266.088.044.089.044.222 0 .266-.089.045-.177 0-.266-.088-.089-.089-.089-.222 0-.266Z" /></svg>
+					</a>
 				</div>
-			</nav>
-
-		</header>
-
-		<div id="main">
-
-			<section id="home">
-				<div class="tc">
-					<div class="container image">
-						<h1>Patrick Wadden</h1>
-						<p class="lead">
-							Interaction Designer
-						</p>
-					</div>
-				</div>
-			</section>
-
-			<section id="me">
-				<div class="tc">
-					<div class="container">
-						<p class="lead">I'm Patrick, an Interaction Designer. I love building stuff that's super easy to use. I've worked for the big, and I've worked for the small. Currently I'm an Englishman in Sydney looking to do something cool, so, if you like what you see then let me know.</p>
-					</div>
-				</div>
-			</section>
-
-			<section id="skills">
-				<div class="tc">
-					<div class="container">
-
-						<h1>My Skills</h1>
-						<p class="lead">There are a few things that make for a great Interaction designer, things I think I do well. Things like: User Experience, Interaction Design, Information Architecture, User Centered Design, Agile Development, Responsive Design, Competitor Analysis.</p>
-
-						<h2>I code too, which makes prototyping super fast. And super fun.</h2>
-
-						<div class="graph">
-
-							<div class="row bars">
-									
-								<div class="col-xs-2">
-
-									<table border="0" width="100%" cellpadding="0" cellspacing="0">
-										<tr height="25%" valign="middle" align="right">
-											<td class="visible-xs">100%</td>
-											<td class="hidden-xs">Yup. I'm an expert</td>
-										</tr>
-										<tr height="25%" valign="middle" align="right">
-											<td class="visible-xs">75%</td>
-											<td class="hidden-xs">Yeah, I know it</td>
-										</tr>
-										<tr height="25%" valign="middle" align="right">
-											<td class="visible-xs">50%</td>
-											<td class="hidden-xs">I can do a bit</td>
-										</tr>
-										<tr height="25%" valign="middle" align="right">
-											<td class="visible-xs">25%</td>
-											<td class="hidden-xs">I know of it</td>
-										</tr>
-									</table>
-
-								</div>
-								<div class="col-xs-2 full">
-									<div class="inner"></div>
-								</div>
-								<div class="col-xs-2 full">
-									<div class="inner"></div>
-								</div>
-								<div class="col-xs-2 third">
-									<div class="inner"></div>
-								</div>
-								<div class="col-xs-2 third">
-									<div class="inner"></div>
-								</div>
-
-							</div>
-
-
-							<div class="row titles">
-									
-								<div class="col-xs-2"></div>
-								<div class="col-xs-2">HTML</div>
-								<div class="col-xs-2">CSS</div>
-								<div class="col-xs-2">
-									<span class="visible-xs">JS</span>
-									<span class="hidden-xs">JavaScript</span>
-								</div>
-								<div class="col-xs-2">PHP</div>
-
-							</div>
-						</div>
-
-						<p>
-							I'd say those are my core skills, but I also really enjoy learning new things, whether a new language or new technique. So I suppose to the above you can also add SASS, LESS, Git, AJAX, jQuery, AngularJS, Bootstrap, Laravel, Wordpress and many, many more...
-						</p>
-
-					</div>
-				</div>
-			</section>
-
-			<section id="work">
-
-				<div class="tc">				
-					<div class="container">
-
-						<h1>My Work</h1>
-						<p class="lead">I've done a fair few things in my time, ranging from local sites to global sites, from small mobile apps to big desktop ones. Some of those things are below, as well as a few other things that I get up to.</p>
-						
-					</div>
-
-					<div class="portfolio">
-
-						<div class="group">
-
-							<div class="container">
-								<div class="row">
-									<div class="col-xs-4">		
-										<div class="thumb">
-											<img src="images/portfolio/westpac-thumb.jpg" alt="" class="img-circle img-responsive" data-target="westpac">
-										</div>
-									</div>
-									<div class="col-xs-4">		
-										<div class="thumb">
-											<img src="images/portfolio/myer-thumb.jpg" alt="" class="img-circle img-responsive" data-target="myer">
-										</div>
-									</div>
-									<div class="col-xs-4">		
-										<div class="thumb">
-											<img src="images/portfolio/vino-paradiso-thumb.jpg" alt="" class="img-circle img-responsive" data-target="vinoparadiso">
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="details" id="westpac">
-								<div class="container">
-									<button type="button" class="close" aria-hidden="true">&times;</button>
-									<h2>New look banking</h2>
-									<h4>Westpac Mobile Banking App.</h4>
-									<p>The oldest bank in Australia wanted a modern app. Not only did they want to add game changing functionality, but they wanted it to look the part too. The biggest customer touch point for the bank has been competely overhauled, and I was at the heart of it.</p>
-									<p><span class="btn btn-default btn-xs tag">#Interaction designer</span> <a href="https://itunes.apple.com/au/app/westpac-mobile-banking/id299111811" class="btn btn-xs btn-primary visit">View in iTunes</a></p>
-									<img src="images/portfolio/westpac.png" alt="Westpac Mobile App" class="img-responsive">
-								</div>
-							</div>
-
-							<div class="details" id="myer">
-								<div class="container">
-									<button type="button" class="close" aria-hidden="true">&times;</button>
-									<h2>Hashtag Christmas</h2>
-									<h4>Myer #giftorium Christmas window.</h4>
-									<p>Working with Live Engagement Specialists <a target="_blank" href="http://ourfriendselectric.com.au/">Our Friends Electric</a>, we placed a 12 screen video wall into one of Myer's prime window locations in the heart of the Sydney CBD. Displaying  Instagram photos and videos of the Myer 'Giftorium' hashtag was the easy part, having it run non-stop for 50 days leading up to Christmas was the fun part.</p>
-									<p><span class="btn btn-default btn-xs tag">#Interaction Designer</span> <span class="btn btn-default btn-xs tag">#Developer</span></p> 
-									<img src="images/portfolio/myer.jpg" alt="Myer Christmas Window" class="img-responsive">
-								</div>
-							</div>
-
-							<div class="details" id="vinoparadiso">
-								<div class="container">
-									<button type="button" class="close" aria-hidden="true">&times;</button>
-									<h2>The Wine Event</h2>
-									<h4>Vino Paradiso event website.</h4>
-									<p>A funky take on the wine festival needed a funky website to match. Aimed at the young and stylish, the Vino Paradiso website not only had to appeal to the younger market, but also had to work on every device they use. A truly mobile first approach meant a successful project, and a successful event.</p>
-									<p><span class="btn btn-default btn-xs tag">#Designer</span> <span class="btn btn-default btn-xs tag">#Web developer</span> <a href="http://www.vinoparadiso.com.au" class="btn btn-xs btn-primary visit">Visit Website</a></p>
-									<img src="images/portfolio/vino-paradiso.png" alt="PayPal Vending Machine" class="img-responsive">
-								</div>
-							</div>
-
-						</div>
-
-						<div class="group">
-
-							<div class="container">
-								<div class="row">
-									<div class="col-xs-4">		
-										<div class="thumb">
-											<img src="images/portfolio/paypal-thumb.jpg" alt="" class="img-circle img-responsive" data-target="accountFeatures">
-										</div>
-									</div>
-									<div class="col-xs-4">		
-										<div class="thumb">
-											<img src="images/portfolio/petsites-thumb.jpg" alt="" class="img-circle img-responsive" data-target="petsites">
-										</div>
-									</div>
-									<div class="col-xs-4">		
-										<div class="thumb">
-											<img src="images/portfolio/paypal-thumb.jpg" alt="" class="img-circle img-responsive" data-target="vendingMachine">
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="details" id="accountFeatures">
-								<div class="container">
-									<button type="button" class="close" aria-hidden="true">&times;</button>
-									<h2>Universal Design</h2>
-									<h4>PayPal, Account Features page.</h4>
-									<p>I led a team of three in the global redesign of PayPal's Account Features page. A Crucial customer touch point, this page showcases what you can do with a PayPal account. Launching across PayPal.com in 193 countries and suitable for any device, using universal design and interaction principals that put the user at the center of the experience was a must.</p>
-									<p><span class="btn btn-default btn-xs tag">#Art Director</span> <span class="btn btn-default btn-xs tag">#Designer</span> <a href="http://web.archive.org/web/20140208083913/https://www.paypal.com/uk/webapps/mpp/what-is-paypal" class="btn btn-xs btn-primary visit">Visit archived page</a></p> 
-									<img src="images/portfolio/account-features.jpg" alt="PayPal Account Features" class="img-responsive">
-								</div>
-							</div>
-
-							<div class="details" id="petsites">
-								<div class="container">
-									<button type="button" class="close" aria-hidden="true">&times;</button>
-									<h2>A helping paw</h2>
-									<h4>Petsites.me. <small>(W.I.P)</small></h4>
-									<p>A project which is more about helping people and creating something to be proud of than making money. Petsites.me's goal is to allow users to create their own sites using our templates, giving easily accessable websites to people who may otherwise miss out. It requires very simple and effective design that even the most hardcore technophobe can use.</p>
-									<p><span class="btn btn-default btn-xs tag">#Lead designer</span> <span class="btn btn-default btn-xs tag">#Web developer</span> <a href="http://petsites.me/" class="btn btn-xs btn-primary visit">Visit site</a></p>
-									<img src="images/portfolio/petsites.jpg" alt="Petsites.me" class="img-responsive">
-								</div>
-							</div>
-
-							<div class="details" id="vendingMachine">
-								<div class="container">
-									<button type="button" class="close" aria-hidden="true">&times;</button>
-									<h2>Thirsty work</h2>
-									<h4>PayPal, Vending machine prototype.</h4>
-									<p>A world-wide first, I worked with PayPal’s innovation team to design and build a mobile interaction where users are able to purchase and vend a soft drink using nothing but their smartphone. Creating intuitive interactions with striking visuals, this project really gave me the opportunity to flex my mobile muscles.</p>
-									<p><span class="btn btn-default btn-xs tag">#Interaction designer</span></p>
-									<img src="images/portfolio/vending-machine.jpg" alt="PayPal Vending Machine" class="img-responsive">
-								</div>
-							</div>
-
-						</div>
-
-						<div class="group">
-
-							<div class="container">
-								<div class="row">
-									<div class="col-xs-4">		
-										<div class="thumb">
-											<img src="images/portfolio/paypal-thumb.jpg" alt="" class="img-circle img-responsive" data-target="christmas">
-										</div>
-									</div>
-									<div class="col-xs-4">		
-										<div class="thumb">
-											<img src="images/portfolio/lodge-your-pet-thumb.jpg" alt="" class="img-circle img-responsive" data-target="LodgeYourPet">
-										</div>
-									</div>
-									<div class="col-xs-4">		
-										<div class="thumb">
-											<img src="images/portfolio/paypal-thumb.jpg" alt="" class="img-circle img-responsive" data-target="countySelector">
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="details" id="christmas">
-								<div class="container">
-									<button type="button" class="close" aria-hidden="true">&times;</button>
-									<h2>A concept’s not just for Christmas</h2>
-									<h4>PayPal, Christmas campaign 2012.</h4>
-									<p>I worked with a designer and copywriter to develop a number of creative concepts for this Christmas campaign and pitch them to the marketing team. The winning concept that I went on to produce was this interactive high street that showcased the offers available to PayPal customers over the festive season. Included a fully functional backend for merchants and marketers to submit, edit and manage which offers were live on a week-by-week basis.</p>
-									<p><span class="btn btn-default btn-xs tag">#Interaction designer</span> <span class="btn btn-default btn-xs tag">#Web developer</span></p>
-									<img src="images/portfolio/christmas-campaign.jpg" alt="PayPal Christmas Campaign" class="img-responsive">
-								</div>
-							</div>
-
-							<div class="details" id="LodgeYourPet">
-								<div class="container">
-									<button type="button" class="close" aria-hidden="true">&times;</button>
-									<h2>Producing pooch’s perfect pad</h2>
-									<h4>Lodge Your Pet.</h4>
-									<p>Pet owners are up there with parents when it comes to being discerning consumers so only the best would do when it came to designing and developing this website. Here people can search for and book a pet sitter to look after their pets. Working as part of a three-man team, I led design and front end development.</p>
-									<p><span class="btn btn-default btn-xs tag">#Lead designer</span> <span class="btn btn-default btn-xs tag">#Web developer</span> <a href="http://www.lodgeyourpet.com" class="btn btn-xs btn-primary visit">Visit Site</a></p>
-									<img src="images/portfolio/lodge-your-pet.jpg" alt="Lodge Your Pet" class="img-responsive">
-								</div>
-							</div>
-
-							<div class="details" id="countySelector">
-								<div class="container">
-									<button type="button" class="close" aria-hidden="true">&times;</button>
-									<h2>Better by a country mile</h2>
-									<h4>PayPal, Country selector.</h4>
-									<p>I reduced three country selectors, all with very poor user experiences into one, simple page to cater for the overwhelming majority of PayPal users worldwide. A political hot potato, a diplomatic ‘customer first’ approach was required when leading this project.</p>
-									<p><span class="btn btn-default btn-xs tag">#Designer</span> <a href="https://www.paypal.com/webapps/mpp/country-worldwide" class="btn btn-xs btn-primary visit">Visit page</a></p>
-									<img src="images/portfolio/country-selector.jpg" alt="PayPal Country Selector" class="img-responsive">
-								</div>
-							</div>
-
-
-						</div>
-
-					</div>
-				</div>
-
-			</section>
-
-			<div id="recommendations" class="hidden-xs">
-
-				<div class="tc">				
-					<div class="container">
-						<h1>Recommendations</h1>
-						<p class="lead">Some of the lovely people that I have worked with previously have been kind enough to write some very nice things about me, and here they are.</p>
-
-
-						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-
-
-							<!-- Wrapper for slides -->
-							<div class="carousel-inner">
-								<div class="item active">
-									<p>In my experience, the best designers have a mastery of their medium. When it comes to the web, that means code (not always an easy thing for creative pros to learn). This is what differentiates Patrick. He cut his teeth as a front-end developer - and now he's sharpened them with a keen eye for aesthetic nuance. I look forward to working with Patrick again in the future - he's going to do great things!</p>
-									<div class="carousel-caption">
-										<h3>Josh Abrams</h3>
-										<p>Global Creative Director at eBay Inc.</p>
-									</div>
-								</div>
-								<div class="item">
-									<p>I first worked with Patrick when he joined PayPal as a Web Producer intern. After a few days of Patrick joining the team, he had transformed our working lives by being able to turn an enthusiastic hand to any design or development task with a skill and maturity that belied his years and experience. I remember me and the head of content saying in his second week on the creative team "I wish we could clone him". It's hard to say what Patrick is best at: creating sleek, contemporary designs with one hand tied behind his back, developing intuitive user interactions and experiences or devising creative concepts to rival the most experienced creative professionals. With the articulate confidence and easy likability to back it all up, Patrick is an asset to any team that is lucky enough to have him.</p>
-									<div class="carousel-caption">
-										<h3>Laura Chung</h3>
-										<p>Head of Copy - Digital at Hult International Business School</p>
-									</div>
-								</div>
-								<div class="item">
-									<p>Patrick is committed to crafting great customer experiences. Not only is Patrick a talented designer but he is also a wonderful team player who collaborates well in a matrixed and fast-paced global environment.</p>
-									<div class="carousel-caption">
-										<h3>Jennifer McConnell</h3>
-										<p>Head of Creative Agency Management, Global Brand at PayPal</p>
-									</div>
-								</div>
-							</div>
-
-							<!-- Controls -->
-							<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-							<span class="glyphicon glyphicon-chevron-left"></span>
-							</a>
-							<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-							<span class="glyphicon glyphicon-chevron-right"></span>
-							</a>
-						</div>
-
-
-					</div>
-				</div>
-
 			</div>
-
-			<section id="connect">
-				<div class="tc">
-				<div class="container">
-
-					<h1>Connect</h1>
-					<p class="lead">Whether for business or pleasure, I'm easy to get hold of. Drop me an email, or connect via linked in, it's up to you.</p>
-
-					<div class="row icons">
-						<div class="col-xs-4 col-sm-5 text-right">
-							<p><i class="fa fa-envelope"></i></p>
-							<p><i class="fa fa-twitter"></i></p>
-							<p><i class="fa fa-phone"></i></p>
-							<p><i class="fa fa-linkedin"></i></p>
-							<p><i class="fa fa-instagram"></i></p>
-						</div>
-						<div class="col-xs-7 links">
-							<p><a href="mailto:patwadden@gmail.com" title="Email me">patwadden@gmail.com</a></p>
-							<p><a href="https://twitter.com/patwadden" title="Follow me">@patwadden</a></p>
-							<p><a href="tel://+61412566385" title="Call me">+61 (0)412 566 385</a></p>
-							<p><a href="http://uk.linkedin.com/pub/patrick-wadden/60/874/853" "Connect with me">Linked in</a></p>
-							<p><a href="http://instagram.com/patwadden" title="Enjoy me">Instagram</a></p>
-						</div>
-					</div>
-					
-				</div>				
-				</div>				
-			</section>
-
+			<span class="uppercase">Product Designer</span>
+			<span class="uppercase">Interaction Designer</span>
+			<small class="mt-4 text-slate-500">London, UK</small>
 		</div>
 
-		<span class="jQueryRef"></span>
+		<h2 class="mt-12 mb-2 text-xl font-bold">About Me</h2>
+		<p>I'm a Product Designer and Interaction designer with a passion for crafting solutions that are both incredibly straightforward and intuitive to use.</p>
+		<p>I've worked for the big, and I've worked for the small. But what I love doing the most is diving in and learning new things.</p>
+		<p>I code, I design, I lead, and I plan. I'm comfortable with large enterprise projects, or small nauenced interaction design.</p>
 
-		<script src="build/dist/js/script.js"></script>
-
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-			ga('create', 'UA-51655766-1', 'patrickwadden.com');
-			ga('send', 'pageview');
-		</script>
-
-	</body>
+		<h2 class="mt-12 mb-2 text-xl font-bold">Project Highlights</h2>
+		<p>There's some work I can't talk about here unfortunately, but here are some of the more interesting proejcts I've worked on.</p>
+		<article class="mt-8 mb-8">
+			<h3 class="font-bold">Twilight Golf</h3>
+			<div class="flex flex-col md:flex-row md:space-x-4 group">
+				<div class="flex-1">
+					<p class="mb-0">My latest obsession is golf. And when me and some friends kicked off a summer league last year, there was no easy way to keep track of who's played and who's winning. So I've spun up a quick app to create a mini league with your mates. It's now never been easier to claim those bragging rights, and show who's the best. Not me, unfortunately.</p>
+				</div>
+				<button class="rounded md:rounded-none mt-4 md:mt-0 p-4 w-full md:w-1/5 relative bg-slate-100 overflow-hidden">
+					<span class="
+						relative
+						z-10
+						font-semibold
+						text-white
+						md:text-slate-500
+						group-hover:text-white
+						md:opacity-10
+						group-hover:opacity-100
+						transition-all
+					">View</span>
+					<div class="absolute bg-sky-500 inset-0 md:left-full w-full h-full transition-all group-hover:left-0"></div>
+				</button>
+			</div>
+		</article>
+		<article class="mb-8">
+			<h3 class="font-bold">Anaml</h3>
+			<div class="flex space-x-4 group">
+				<div class="flex-1">
+				<p>An enterprise tool to solve an enterprise problem. Anaml solves the difficult problem of data transformation, by abstracting complex logic and data science behind a simple, user firendly UI. Designing and building a large, complex enterprise app was the day job, but it also required me to immerse myself in the world of big data.</p>
+			</div>
+			<button class="w-1/5 relative bg-slate-100 overflow-hidden">
+				<span class="relative z-10 opacity-10 group-hover:opacity-100 transition-all font-semibold text-slate-500 group-hover:text-white">View</span>
+				<div class="absolute bg-sky-500 inset-0 left-full w-full h-full transition-all group-hover:left-0"></div>
+			</button>
+		</div>
+		</article>
+		<article class="mb-8">
+			<h3 class="font-bold">Westpac Mobile Banking</h3>
+			<div class="flex space-x-4 group">
+				<div class="flex-1">
+					<p>The oldest bank in Australia wanted a modern app. Not only did they want to add game changing functionality, but they wanted it to look the part too. The biggest customer touch point for the bank has been competely overhauled, and I was at the heart of it.</p>
+				</div>
+				<button class="w-1/5 relative bg-slate-100 overflow-hidden">
+					<span class="relative z-10 opacity-10 group-hover:opacity-100 transition-all font-semibold text-slate-500 group-hover:text-white">View</span>
+					<div class="absolute bg-sky-500 inset-0 left-full w-full h-full transition-all group-hover:left-0"></div>
+				</button>
+			</div>
+		</article>
+		<article class="mb-8">
+			<h3 class="font-bold">Myer Photo Wall</h3>
+			<div class="flex space-x-4 group">
+				<div class="flex-1">
+					<p>Working with a Live Engagement Specialist, we placed a 12 screen video wall into one of Myer's prime window locations in the heart of the Sydney. Displaying Instagram photos and videos of the Myer #Giftorium hashtag was the easy part, having it run non-stop for 50 days leading up to Christmas was the fun part.</p>
+				</div>
+				<button class="w-1/5 relative bg-slate-100 overflow-hidden">
+					<span class="relative z-10 opacity-10 group-hover:opacity-100 transition-all font-semibold text-slate-500 group-hover:text-white">View</span>
+					<div class="absolute bg-sky-500 inset-0 left-full w-full h-full transition-all group-hover:left-0"></div>
+				</button>
+			</div>
+		</article>
+		<article class="mb-8">
+			<h3 class="font-bold">PayPal Global Website</h3>
+			<div class="flex space-x-4 group">
+				<div class="flex-1">
+					<p>I led a team of three in the global redesign of PayPal's Account Features page. A Crucial customer touch point, this page showcases what you can do with a PayPal account. Launching across PayPal.com in 193 countries and suitable for any device, using universal design and interaction principals that put the user at the center of the experience was a must.</p>
+				</div>
+				<button class="w-1/5 relative bg-slate-100 overflow-hidden">
+					<span class="relative z-10 opacity-10 group-hover:opacity-100 transition-all font-semibold text-slate-500 group-hover:text-white">View</span>
+					<div class="absolute bg-sky-500 inset-0 left-full w-full h-full transition-all group-hover:left-0"></div>
+				</button>
+			</div>
+		</article>
+	</main>
+</body>
 </html>
